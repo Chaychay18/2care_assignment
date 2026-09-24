@@ -1,7 +1,11 @@
 import json
 from pathlib import Path
+from rich.console import Console
+from rich.markdown import Markdown
 from agent.tools import TOOL_DEFINITIONS, dispatch_tool
 from agent.provider import make_client, chat_step
+
+_console = Console()
 
 
 def load_prompt(path: str) -> str:
@@ -36,4 +40,6 @@ def run_interactive(prompt_path: str = "agent/prompts/v1.txt", provider: str = "
             break
         messages.append({"role": "user", "content": user_input})
         reply, messages, _ = agent_turn(client, messages, prompt_path, provider)
-        print(f"\nClara: {reply}\n")
+        _console.print("\n[bold cyan]Clara:[/bold cyan]")
+        _console.print(Markdown(reply))
+        print()
