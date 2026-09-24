@@ -8,15 +8,15 @@ SCENARIOS = [
         "patient_goal": "Book a general checkup for 2026-09-25 morning. Accept whatever morning slot is offered.",
         "script_hints": [
             "I'd like to book an annual checkup.",
-            "Next week, morning if possible. How about 2026-09-25?",
-            "The 9am slot sounds perfect.",
-            "Yes please book it. My name is Sarah Chen, phone 555-9876.",
+            "How about 2026-09-25 morning?",
+            "The 9am slot works for me.",
+            "Sarah Chen, 555-9876.",
         ],
         "pass_criteria": {
             "deterministic": ["book_appointment_called"],
             "llm_dimensions": ["task_completed", "confirmation_given", "professional_tone"],
         },
-        "expected_failure_v1": False,
+        "expected_failure_v1": True,
     },
     {
         "id": "S02_no_availability",
