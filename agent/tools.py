@@ -4,18 +4,33 @@ import copy
 
 _SLOT_SEED = {
     "2026-09-24": [
-        {"id": "S001", "time": "09:00", "provider": "Dr. Smith",  "specialty": "General"},
-        {"id": "S002", "time": "10:30", "provider": "Dr. Smith",  "specialty": "General"},
-        {"id": "S003", "time": "14:00", "provider": "Dr. Jones",  "specialty": "Cardiology"},
+        {"id": "S001", "time": "09:00", "provider": "Dr. Smith", "specialty": "General"},
+        {"id": "S002", "time": "10:30", "provider": "Dr. Smith", "specialty": "General"},
+        {"id": "S003", "time": "14:00", "provider": "Dr. Jones", "specialty": "Cardiology"},
     ],
     "2026-09-25": [
-        {"id": "S004", "time": "09:00", "provider": "Dr. Smith",  "specialty": "General"},
-        {"id": "S005", "time": "11:00", "provider": "Dr. Brown",  "specialty": "Dermatology"},
-        {"id": "S006", "time": "15:00", "provider": "Dr. Jones",  "specialty": "Cardiology"},
+        {"id": "S004", "time": "09:00", "provider": "Dr. Smith", "specialty": "General"},
+        {"id": "S005", "time": "11:00", "provider": "Dr. Brown", "specialty": "Dermatology"},
+        {"id": "S006", "time": "15:00", "provider": "Dr. Jones", "specialty": "Cardiology"},
     ],
     "2026-09-26": [
-        {"id": "S007", "time": "09:30", "provider": "Dr. Smith",  "specialty": "General"},
-        {"id": "S008", "time": "13:00", "provider": "Dr. Brown",  "specialty": "Dermatology"},
+        {"id": "S007", "time": "09:30", "provider": "Dr. Smith", "specialty": "General"},
+        {"id": "S008", "time": "13:00", "provider": "Dr. Brown", "specialty": "Dermatology"},
+    ],
+    "2026-09-28": [
+        {"id": "S009", "time": "10:00", "provider": "Dr. Smith", "specialty": "General"},
+        {"id": "S010", "time": "11:30", "provider": "Dr. Jones", "specialty": "Cardiology"},
+        {"id": "S011", "time": "14:30", "provider": "Dr. Brown", "specialty": "Dermatology"},
+    ],
+    "2026-09-29": [
+        {"id": "S012", "time": "09:00", "provider": "Dr. Jones", "specialty": "Cardiology"},
+        {"id": "S013", "time": "10:30", "provider": "Dr. Smith", "specialty": "General"},
+        {"id": "S014", "time": "15:00", "provider": "Dr. Brown", "specialty": "Dermatology"},
+    ],
+    "2026-09-30": [
+        {"id": "S015", "time": "09:30", "provider": "Dr. Smith", "specialty": "General"},
+        {"id": "S016", "time": "11:00", "provider": "Dr. Jones", "specialty": "Cardiology"},
+        {"id": "S017", "time": "14:00", "provider": "Dr. Brown", "specialty": "Dermatology"},
     ],
 }
 
